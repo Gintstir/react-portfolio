@@ -18,7 +18,7 @@ function Nav() {
         
         <Router>
             <div>
-                <navbar className="navbar" >
+                <nav className="navbar" >
                     <ul className="topnav">
                         <li className="mx-2">
                             <Link to="/">About Me</Link>
@@ -44,7 +44,7 @@ function Nav() {
                             </Link> 
                         </li>                        
                     </ul>
-                </navbar>
+                </nav>
 
                
 

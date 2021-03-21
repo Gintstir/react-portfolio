@@ -49,9 +49,10 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  /* background: var(--dark); */
+  
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Georgia, serif' cursive;
 
 }
 
@@ -339,7 +340,14 @@ a {
 }
 
 .navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;  
+  color: white;
   text-align: center;
+  margin: 0 auto;
+  
   
 }
 
@@ -347,4 +355,13 @@ a {
   text-align: center;
   padding: 14px, 16px;
   display: inline-block;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.margintop {
+  margin-top: 100px;
+
 }

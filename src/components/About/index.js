@@ -4,7 +4,7 @@ import profPic from '../../assets/images/profpic.JPG'
 
 function About () {
     return (
-        <section>
+        <section className="margintop">
             
             <div >
                 <p className="mx-2"><img src={profPic} alt="profile" className="my-3 profile"/>

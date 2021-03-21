@@ -60,22 +60,22 @@ function ContactForm() {
     };
 
     return (
-        <section>
+        <section className="margintop">
             <Container>
                 <Row>
                     <Col md={4}></Col>
                     <Col md={4}>
                         <h1 data-testid="h1tag">Contact Me</h1>
                         <Form onSubmit={handleSubmit}>
-                            <Form.Group controlId="formBasicName">
+                            <Form.Group >
                                 <Form.Label htmlFor="name">Name:</Form.Label>
                                 <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}></Form.Control>
                             </Form.Group>
-                            <Form.Group controlId="formBasicEmail">
+                            <Form.Group >
                                 <Form.Label htmlFor="email">Email:</Form.Label>
                                 <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange}></Form.Control>
                             </Form.Group>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Group >
                                 <Form.Label htmlFor="message">Message:</Form.Label>
                                 <Form.Control as="textarea" name="message" rows={5} defaultValue={message} onBlur={handleChange} />
                             </Form.Group>
