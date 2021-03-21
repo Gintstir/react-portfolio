@@ -18,8 +18,8 @@ function Nav() {
         
         <Router>
             <div>
-                <nav>
-                    <ul className="flex-row">
+                <navbar className="navbar" >
+                    <ul className="topnav">
                         <li className="mx-2">
                             <Link to="/">About Me</Link>
                         </li>
@@ -44,9 +44,9 @@ function Nav() {
                             </Link> 
                         </li>                        
                     </ul>
-                </nav>
+                </navbar>
 
-                <hr />
+               
 
                 <Switch>
                     <Route exact path="/">

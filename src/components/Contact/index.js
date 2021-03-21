@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Form, Button, Container, Row, Col  } from 'react-bootstrap';
 
 function ContactForm() {
 
@@ -60,27 +61,29 @@ function ContactForm() {
 
     return (
         <section>
-            <h1 data-testid="h1tag">Contact Me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />                    
-                </div>
-                <div>
-                    <label htmlFor="email">Email adress: </label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />                    
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-                <button data-testid="button" type="submit">Submit</button>
-            </form>
+            <Container>
+                <Row>
+                    <Col md={4}></Col>
+                    <Col md={4}>
+                        <h1 data-testid="h1tag">Contact Me</h1>
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group controlId="formBasicName">
+                                <Form.Label htmlFor="name">Name:</Form.Label>
+                                <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}></Form.Control>
+                            </Form.Group>
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Label htmlFor="email">Email:</Form.Label>
+                                <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange}></Form.Control>
+                            </Form.Group>
+                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                                <Form.Label htmlFor="message">Message:</Form.Label>
+                                <Form.Control as="textarea" name="message" rows={5} defaultValue={message} onBlur={handleChange} />
+                            </Form.Group>
+                            <Button variant="primary" type="submit">Submit</Button>               
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
     // onBlur vs OnChange - attribute will fire the event once the user has changed focus from the
@@ -90,3 +93,21 @@ function ContactForm() {
 
 export default ContactForm;
 
+                // <div>
+                //     <label htmlFor="name">Name:</label>
+                //     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />                    
+                // </div>
+                // <div>
+                //     <label htmlFor="email">Email adress: </label>
+                //     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                // </div>
+                // <div>
+                //     <label htmlFor="message">Message:</label>
+                //     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />                    
+                // </div>
+                // {errorMessage && (
+                //     <div>
+                //         <p className="error-text">{errorMessage}</p>
+                //     </div>
+                // )}
+                // <button data-testid="button" type="submit">Submit</button>

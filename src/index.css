@@ -329,3 +329,22 @@ a {
   float: left;
   margin-right: 15px;
 }
+
+.nav {
+  float: right;
+  margin-left: auto;
+  display: inline-flex;
+  
+
+}
+
+.navbar {
+  text-align: center;
+  
+}
+
+.topnav li{
+  text-align: center;
+  padding: 14px, 16px;
+  display: inline-block;
+}
