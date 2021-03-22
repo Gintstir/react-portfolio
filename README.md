@@ -1,6 +1,6 @@
-# React Portfolio
+# React Portfolio  ![badge](https://img.shields.io/badge/License-Apache~2.0-brightgreen.svg)
 
-A redo of my professional portfolio using the React framework.
+**A redo of my professional portfolio using the React framework.**
 
 ## Acceptance Criteria
 
@@ -30,66 +30,127 @@ A redo of my professional portfolio using the React framework.
 - WHEN I view the footer
 - THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 
-## Getting Started
-
-- A single Header component that appears on multiple pages
-
-- A single Navigation component within the header that will be used to conditionally render the different sections of your portfolio
-
-- A single Project component that will be used multiple times in the Portfolio section
-
-- A single Footer component that appears on multiple pages
-
-## Project Section
-
-- An image of the deployed application (either a GIF or a screenshot)
-
-- The title of the project
-
-- A link to the deployed application
-
-- A link to the corresponding GitHub repository
-
-## Design 
-
-- Use mobile-first design.
-
-- Choose a color palette so that your site doesn't just look like the default Bootstrap theme or an unstyled HTML site. Look into resources like Coolors (Links to an external site.) or another color scheme generator to help you create something that will stand out.
-
-- Make sure the font size is large enough to read and that the colors don't cause eye strain.
-
-- Consider using animations and React component libraries. Note that this will not affect your grade, but it may impact how potential employers gauge your knowledge.
-
 ## Grading Requirements
 
-- [ ] Application must use React to render content.
-- [ ] Application has a single Header component that appears on multiple pages, with a Navigation component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
+- [x] Application must use React to render content.
+- [x] Application has a single Header component that appears on multiple pages, with a Navigation component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
 - [ ] Application has a single Project component that’s used multiple times in the Portfolio section.
 
-- [ ] Application has a single Footer component that appears on multiple pages.
+- [x] Application has a single Footer component that appears on multiple pages.
 
-- [ ] Application must be deployed to GitHub Pages.
+- [x] Application must be deployed to GitHub Pages.
 
-- [ ] Application deployed at live URL.
+- [x] Application deployed at live URL.
 
-- [ ] Application loads with no errors.
+- [x] Application loads with no errors.
 
-- [ ] Application GitHub URL submitted.
+- [x] Application GitHub URL submitted.
 
-- [ ] GitHub repository contains application code.
+- [x] GitHub repository contains application code.
 
 - [ ] User experience is intuitive and easy to navigate.
 
 - [ ] User interface style is clean and polished.
 
-- [ ] Application uses a color scheme other than the default Bootstrap color palette.
+- [x] Application uses a color scheme other than the default Bootstrap color palette.
 
-- [ ] Repository has a unique name.
+- [x] Repository has a unique name.
 
-- [ ] Repository follows best practices for file structure and naming conventions.
+- [x] Repository follows best practices for file structure and naming conventions.
 
-- [ ] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-- [ ] Repository contains multiple descriptive commit messages.
+- [x] Repository contains multiple descriptive commit messages.
 
-- [ ] Repository contains high-quality README file with description, screenshot, and link to deployed application.
+- [x] Repository contains high-quality README file with description, screenshot, and link to deployed application.
+
+## **Table of Contents**
+
+<br>
+
+* *[Installation](#installation)*
+* *[Screenshots](#screenshots)*
+* *[Usage Instructions](#usage-instructions)*
+* *[Contributing](#contributing)*
+* *[Technology](#technology)*
+* *[Tests](#tests)*
+* *[Questions](#questions)*
+* *[License](#license)*
+
+<br>
+
+## **Installation**
+
+<br>
+
+After cloning/forking the applications use the command `npm i` or `npm install` to download the necessary dependencies.
+
+<br>
+
+## **Screenshots**
+
+<br>
+
+**Budget Tracker:**
+
+![Screenshot](src/assets/images/screenchot.png)
+
+<br>
+
+## **Usage-instructions**
+
+<br>
+
+To test this application, or to run it locally use the command `npm start` to activate the react server.  It redering is successfull and there are no error messages in the terminal a new tab with the app will pop up.     
+
+<br>
+
+## **Contributing**
+
+<br>
+
+Please refer to the **[Contributor Covenant](https://www.contributor-covenant.org/)** for contribution guidelines.
+
+<br>
+
+## **Technology**
+
+<br>
+
+**This project was completed using:** 
+
+<br> 
+
+- `React.js`
+- `React-BootStrap`
+- `React-Router`
+- `Pixabay`
+
+
+<br>
+
+## **Tests**  
+
+<br>
+
+No test need to be run at this time. 
+
+<br>
+
+## **Questions**
+
+<br>
+
+For any questions, comments, or feedback please feel free to reach out: <br>
+- **[Github](https://github.com/gintstir)** 
+- **<gint.stirbys@gmail.com>**
+
+<br>
+
+## **License** 
+
+<br>
+
+Copyright © **Gintautas Stirbys**, **2021**.  All Rights Reserved.
+
+This Project is licensed under the **[Apache~2.0](https://www.apache.org/licenses/LICENSE-2.0)** license.
