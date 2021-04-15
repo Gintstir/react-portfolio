@@ -1,23 +1,35 @@
 import React from 'react';
-// import profPic from '../../assets/images/profpic.JPG'
-import Card from 'react-bootstrap/Card'
+
+import {Grommet, Box, Grid, Image} from 'grommet';
+import { grommet } from 'grommet/themes'
+
 
 function About () {
     return (
-        <section className="margintop fullheight">
-            
-            <div >
-                {/* <img src={profPic} alt="profile" className="my-3 profile"/> */}
-                <Card border="danger" style={{ width: '80%' }} text="primary">
-                    <Card.Body>
-                        <Card.Title >About Me</Card.Title>
-                        <Card.Text>
-                            Experienced Relocation Specialist based in Philadelphia. Skilled in full stack Web Develoment, Customer Service, and Creative Problem Solving. I possess strong communication skills and am a dedicated hard-worker. I graduated from Temple University and am currently enrolled in the UPenn LPS Fulltime-Flex Full-Stack Web Development Coding Bootcamp.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-        </section>
+        <Grommet full theme={grommet}>
+            <Box margin={{horizontal:"40px"}} pad="large">
+                <Grid 
+                    rows={['xxsmall', 'medium', 'xsmall']}
+                    columns={['1/4', '3/4']}
+                    areas={[
+                        {name:'sidebar', start: [0, 1], end: [0, 1] },
+                        {name: "main", start: [1, 1], end: [1, 1] }
+                    ]}
+                    gap="medium">
+                    <Box background="light-2" gridArea="sidebar">
+                        <Image
+                            a11yTitle="A really cool guy"
+                            alignSelf="center"
+                            fit="cover"
+                            src={require("../../assets/images/profpic.JPG").default}
+                        />
+                    </Box>
+                    <Box background="light-1" gridArea="main">
+                        main
+                    </Box>
+                </Grid>
+            </Box>
+        </Grommet>
     )
 }
 

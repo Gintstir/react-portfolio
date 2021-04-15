@@ -1,32 +1,35 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa"
-import { IconContext } from 'react-icons'
+import {Grommet, Anchor, Box, Footer, Text} from 'grommet';
+import { Github, Instagram, Linkedin } from 'grommet-icons'
 
-function Footer() {
+
+function Foot() {
 
     return (
-        <IconContext.Provider value={{ color: "white", size: "2em "}}>
-
-        <div className="footer">
-            <footer  >
-                <ul className="social-icons">
-                    <li className="mx-2">
-                        <a href="https://github.com/Gintstir" rel="noreferrer "target="_blank"><FaGithub /></a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="https://www.linkedin.com/in/gintautas-stirbys/" rel="noreferrer" target="_blank"><FaLinkedin /></a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="https://www.instagram.com/gintstir/" rel="noreferrer" target="_blank"><FaInstagramSquare /></a>
-                    </li>
-                </ul>
-            </footer>            
-        </div>
-
-        </IconContext.Provider>
+        <Grommet style={{marginTop: "auto"}}>
+            <Footer background="light-6">
+                <Box direction="row" gap="large" style={{margin:"0 auto"}}>
+                   <Anchor
+                        a11yTitle="Check out my Github"
+                        href="https://github.com/Gintstir"
+                        icon={<Github color="black" size="medium" />}
+                    />
+                    <Anchor
+                        a11yTitle="Add me on LinkedIn"
+                        href="https://www.linkedin.com/in/gintautas-stirbys/"
+                        icon={<Linkedin color="black" size="medium" />}
+                    />
+                    <Anchor
+                        a11yTitle="Check out my pictures on Instagram"
+                        href="https://www.instagram.com/gintstir/"
+                        icon={<Instagram color="black" size="medium" />}
+                    /> 
+                </Box>
+            </Footer>
+        </Grommet>
     )
 }
 
-export default Footer;
+export default Foot;
 
 

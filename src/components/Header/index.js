@@ -7,13 +7,19 @@ import {Grommet, grommet, Text, Header, Box, Avatar} from 'grommet';
 function Nav() {
     return (
         <Grommet>
-            <Header pad="small" background="white">
-                <Box direction="row">
-                    <Link to="/">
-                    <Avatar background="accent-2" src="//src/assets/images/screenchot.png" />
-                    </Link>
-                    
-                </Box>
+            <Header pad="small" background="light-6" >
+                    <Box direction="row">
+                        <Link to="/">
+                        <Avatar background="accent-2" src={require("../../assets/images/Gint.JPG").default} />
+                        </Link>                    
+                    </Box>
+                    <Box direction="row" gap="medium" margin={{right:"20px"}}>
+                        <Link to="/portfolio">Portfolio</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/resume">Resume</Link>
+                        <Link to="/contact">Contact</Link>
+                        <Link to="/hobbies">Hobbies</Link>
+                    </Box>
             </Header>
         </Grommet>
     )
