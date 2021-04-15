@@ -38,9 +38,16 @@ function About () {
                             <Text>When I'm not at the computer working on a project or learning a new technology you'll find me playing outside with my son, hiking, crotcheting, cooking, or baking</Text>
                         </Paragraph>
                     </Box>
-                    <Box gridArea="footer"background="light-6" margin={{top: "30px"}}>
-                        hello
-                        <Multi />
+                    <Box gridArea="footer"background="light-6" margin={{top: "30px"}} direction="row">
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_1835.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_5169.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_5813.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_6060.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_2032.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_2452.JPG").default}></Image></Box>
+                        <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_4185.JPG").default}></Image></Box>
+                        {/* <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_5375.JPG").default}></Image></Box> */}
+                        {/* <Box pad="medium"><Image fit="contain"src={require("./Carousel/apptrailphoto.JPG").default}></Image></Box> */}
                     </Box>
                 </Grid>
             </Box>
