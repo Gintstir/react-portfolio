@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grommet, Anchor, Box, Footer, Text} from 'grommet';
+import {Grommet, Anchor, Box, Footer} from 'grommet';
 import { Github, Instagram, Linkedin } from 'grommet-icons'
 
 

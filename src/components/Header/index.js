@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
-import {Grommet, grommet, Text, Header, Box, Avatar} from 'grommet';
+import {Grommet, Header, Box, Avatar} from 'grommet';
 
 function Nav() {
     return (

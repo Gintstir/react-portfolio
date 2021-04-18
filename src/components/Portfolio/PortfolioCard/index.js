@@ -18,7 +18,7 @@ function PortfolioCard({item}) {
     };
     return (
         <Grommet>
-            <Card elevation="large" width="xlarge" key={item.heading}>
+            <Card background={{color:"light-6", opacity:"strong"}} elevation="large" width="large" key={item.heading}>
                 <CardBody pad={{vertical: "small"}} height="small" >
                     <Box height="small" width="large" alignContent="center">
                     <Image
@@ -34,7 +34,7 @@ function PortfolioCard({item}) {
                     <Heading alignSelf="center" level="3" margin={{vertical: "medium"}}>
                         {item.heading}
                     </Heading>
-                    <Paragraph margin={{top: "none"}}>
+                    <Paragraph margin={{top: "none", horizontal: "auto"}}>
                         {item.tech}
                     </Paragraph>
                 </Box>
