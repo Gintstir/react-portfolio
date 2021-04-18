@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Contact from './components/Contact';
 import About from './components/About';
-import Nav from './components/Header';
+import Navbar from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       
-        <Router className="wrapper">
-          <Nav />
+        <Router >
+          <Navbar />
             <Switch>
               <Route exact path='/'>
                 <About />

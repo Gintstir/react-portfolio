@@ -9,7 +9,7 @@ function Resume() {
     return(
         // <Grommet style={{backgroundImage: `url(${background})`, }}>
         <Grommet background={{image:`url(${background})`,}}>
-            <Box margin="auto" pad="large" height="large" width="large">
+            <Box margin="auto" pad="large" height="xlarge" width="xlarge">
                <Image
                     src={require("./assets/resume.png").default}
                     fit="contain"

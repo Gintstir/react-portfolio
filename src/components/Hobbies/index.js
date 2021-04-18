@@ -1,14 +1,20 @@
 import React from 'react';
+import {Grommet, Box, Paragraph} from "grommet"
+import background from '../../assets/images/forestbackdrop.jpg'
+
 
 function Hobbies() {
     return (
-        <section className="margintop">
-            <div>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-                </p>
-            </div>
-        </section>
+        <Grommet full background={{image:`url(${background})`,}}>
+            <Box fill align="center" justify="center">
+                <Box round="small" width="large" height="small" background={{color:"white", opacity:"strong"}} >
+                    <Paragraph textAlign="center" alignSelf="center">
+                        Coming soon!<br></br><br></br>
+                        This component is under construction!
+                    </Paragraph>
+                </Box>
+            </Box>
+        </Grommet>
     )
 }
 
