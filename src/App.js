@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Contact from './components/Contact';
 import About from './components/About';
@@ -17,10 +17,10 @@ function App() {
   return (
     <>
       
-        <Router >
+        <Router basename="/">
           <Navbar />
             <Switch>
-              <Route exact path="/about">
+              <Route exact path="/">
                 <About />
               </Route>
               <Route exact path="/portfolio">
