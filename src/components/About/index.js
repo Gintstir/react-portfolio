@@ -36,6 +36,37 @@ const data =[
    }
 ]
 
+const data2 =[
+    {
+         image: require("./Carousel/IMG_1835.JPG").default,
+         caption: "Summiting Katahdin.  Oct, 2011"
+    },
+    {
+        image: require("./Carousel/IMG_5169.JPG").default,
+        caption: "Freshly baked sandwich bread.  Sept, 2020"
+    },
+    {
+         image: require("./Carousel/IMG_5813.JPG").default,
+         caption: "Alfie throwing rocks.  Aug, 2020"
+    },
+    {
+         image: require("./Carousel/IMG_6060.JPG").default,
+         caption: "Three-cheese pizza.  Jan, 2021"
+    },
+    {
+        image: require("./Carousel/IMG_2032.JPG").default,
+        caption: "Hundred Mile Wilderness.  Oct, 2011"
+    },
+    {
+        image: require("./Carousel/IMG_2452.JPG").default,
+        caption: "Crochet hat for Jamie, Feb, 2019"
+    },
+    {
+        image: require("./Carousel/IMG_4185.JPG").default,
+        caption: "Flatbread off the grill.  June, 2018"
+    }
+ ]
+
 function About () {
     const [open, setOpen] = React.useState();
 
@@ -79,33 +110,36 @@ function About () {
                             <Text>When I'm not at the computer working on a project or learning a new technology you'll find me playing outside with my son, hiking, crotcheting, cooking, or baking.</Text>
                         </Paragraph>
                     </Box>
-                    <Box elevation="xlarge" round={{size: "xsmall"}} gridArea="footer"background={{color:"light-6", opacity: "strong"}}  margin={{top: "30px", right: "10px"}} direction="row">
-                        
-                        <Box pad="medium" justify="center" alignContent="center" direction="row">
-                            {data.map((item) => (
-                                <Button item={item} key={item.image} onClick={onOpen}>                                
-                                    <Box >                                   
-                                        <Image fit="cover" src={item.image}></Image>                                   
+                    <Box elevation="xlarge" round={{size: "xsmall"}} gridArea="footer"  height="small" background={{color:"light-6", opacity: "strong"}}  margin={{top: "30px", right: "10px"}} >
+                     
+                        <Box  direction="row"  gap="small" justify="evenly">
+                        {data.map((item) => (                            
+                            <Button  onClick={onOpen}>
+                                                               
+                                    <Box alignContent="center" item={item} key={item.image} height="small" width="small"  justify="center" >                                   
+                                        <Image fit="cover"  src={item.image}></Image>                                   
                                     </Box>
-                                </Button>
-                            ))}
-                            
-                        </Box>
-                            { open && (
-                                <Layer
-                                    position="center"
-                                    onClickOutside={onClose}
-                                    onEsc={onClose}
-                                >
-                                   {data.map((item) => (
-                                        <Box item={item} key={item.image} pad="medium" height="large" width="large">                                        
-                                            <Image fit="cover"src={item.image}></Image>
+                                
+                            </Button>
+                            ))}                           
+                        </Box> 
+                                              
+                           { open && (                             
+                            <Layer position="center" onClickOutside={onClose} onEsc={onClose}>
+                                                                                                    
+                                    <Box  pad="medium" height="large" width="large">
+                                    {data2.map((item) => (                                      
+                                        <Box  item={item} key={item.image}>
+                                            <Image fit="cover" src={item.image}></Image>
                                             <Text margin={{top:"small", bottom:"small"}}alignSelf="center">{item.caption}</Text>
-                                            <Button onClick={onClose} color="dark-3" label="Close" ></Button>                                        
+                                            <Button onClick={onClose} color="dark-3" label="Close" ></Button> 
                                         </Box>
-                                   ))}
-                                </Layer>
-                            )}
+                                    ))}                                       
+                                    </Box> 
+                                                                                                
+                            </Layer>                              
+                        )}
+                          
                         {/* <Box pad="small">
                             <Image fit="contain"src={require("./Carousel/IMG_5169.JPG").default}></Image>
                         </Box>
@@ -116,7 +150,7 @@ function About () {
                         <Box pad="small"><Image fit="contain"src={require("./Carousel/IMG_4185.JPG").default}></Image></Box>
                         <Box pad="medium"><Image fit="contain"src={require("./Carousel/IMG_5375.JPG").default}></Image></Box>
                         <Box pad="medium"><Image fit="contain"src={require("./Carousel/apptrailphoto.JPG").default}></Image></Box> */}
-                       
+                        
                     </Box>
                 </Grid>
             </Box>
