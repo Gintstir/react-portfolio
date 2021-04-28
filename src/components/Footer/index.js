@@ -7,22 +7,22 @@ function Foot() {
 
     return (
         <Grommet style={{marginTop: "auto"}}>
-            <Footer background="light-6">
+            <Footer background="dark-1">
                 <Box direction="row" gap="large" style={{margin:"0 auto"}}>
                    <Anchor
                         a11yTitle="Check out my Github"
                         href="https://github.com/Gintstir"
-                        icon={<Github color="black" size="medium" />}
+                        icon={<Github color="white" size="medium" />}
                     />
                     <Anchor
                         a11yTitle="Add me on LinkedIn"
                         href="https://www.linkedin.com/in/gintautas-stirbys/"
-                        icon={<Linkedin color="black" size="medium" />}
+                        icon={<Linkedin color="white" size="medium" />}
                     />
                     <Anchor
                         a11yTitle="Check out my pictures on Instagram"
                         href="https://www.instagram.com/gintstir/"
-                        icon={<Instagram color="black" size="medium" />}
+                        icon={<Instagram color="white" size="medium" />}
                     /> 
                 </Box>
             </Footer>

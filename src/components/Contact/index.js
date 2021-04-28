@@ -29,7 +29,7 @@ const defaultValue = {
 function ContactForm() {
   const [value, setValue] = useState(defaultValue);
   return (
-    <Grommet full theme={grommet}  background={{image:`url(${background})`,}}>
+    <Grommet full  >
       <Box fill align="center" justify="center">
         <Text size="3xl" weight="bold" margin={{bottom: "medium"}}>Get in touch!</Text>
         <Box elevation="xlarge" width="large" pad="medium" background={{color:"white", opacity:"strong"}} border={{size:"medium", color:"black", style:"double"}}>

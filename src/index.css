@@ -21,3 +21,16 @@ code {
   background-image: url("./assets//images/forestbackdrop.jpg")
 }
 
+.navlinks {
+  color: "black";
+  
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;  
+}
+
+a:hover {
+  font-weight: bolder;
+}

@@ -2,13 +2,21 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
-import {Grommet, Header, Box, Avatar, ResponsiveContext, Menu} from 'grommet';
+import {Grommet, Header, Box, Avatar, ResponsiveContext, Menu, grommet, Text} from 'grommet';
 import {Menu as MenuIcon } from 'grommet-icons';
+import {deepMerge} from 'grommet/utils';
+
+const customTheme = deepMerge(grommet, {
+    anchor: {
+        textDecoration: 'none',
+        fontWeight: "500"
+    }
+})
 
 function Nav() {
     return (
-        <Grommet>
-            <Header pad="small" background="light-6">
+        <Grommet theme={customTheme}>
+            <Header pad="small" background={{color: "dark-1"}}>
                     <Box direction="row">
                         <Link to="/">
                         <Avatar background="accent-2" src={require("../../assets/images/Gint.JPG").default} />
@@ -47,8 +55,9 @@ function Nav() {
                                 </Box>
                             ) : (
                                 <Box direction="row" gap="medium" margin={{right: "medium"}}>
-                                    <Link to="/portfolio">Portfolio</Link>
+                                   
                                     <Link to="/">About</Link>
+                                    <Link to="/portfolio">Portfolio</Link>
                                     <Link to="/resume">Resume</Link>
                                     <Link to="/contact">Contact</Link>
                                     <Link to="/hobbies">Hobbies</Link>

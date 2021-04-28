@@ -5,7 +5,7 @@ import background from '../../assets/images/forestbackdrop.jpg'
 
 function Hobbies() {
     return (
-        <Grommet full background={{image:`url(${background})`,}}>
+        <Grommet  full>
             <Box fill align="center" justify="center">
                 <Box round="small" width="large" height="small" background={{color:"white", opacity:"strong"}} >
                     <Paragraph textAlign="center" alignSelf="center">

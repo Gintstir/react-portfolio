@@ -13,9 +13,9 @@ function About () {
                 <Grid responsive columns={{count:"fit", size:'small'}} >
                     
                     <Box margin={{top:"70px"}} justify="center"pad="medium"  gap="medium" wrap responsive direction="row-responsive" >
-                        <Card background={{color: "white", opacity:"strong"}} justify="center" height="medium" width="medium"round="medium">
-                            <CardHeader justify="center">
-                                <Text > This is me:</Text>
+                        <Card background={{color: "white", opacity:"strong"}} justify="center" height="medium" width="medium"round="small">
+                            <CardHeader height="xxsmall" justify="center">
+                                <Text size="xlarge"> This is me:</Text>
                             </CardHeader>
                             <CardBody>
                                 <Image fit="cover" src={require("../../assets/images/profpic.JPG").default} />                            
@@ -24,7 +24,7 @@ function About () {
                         <Card background={{color: "white", opacity:"strong"}}height="medium" width="large">
                             <CardBody overflow="auto">
                                 <Paragraph margin="medium" alignSelf="stretch" fill >
-                                    <Text size="xlarge">About Me:</Text><br></br><br></br>
+                                    <Text  size="xlarge">About Me:</Text><br></br><br></br>
                                     <Text size="large">Hi I'm Gintautas (Ghin•tow•tuss), </Text> 
                                     <Text>but you can call me Gint!</Text> <br></br><br></br>
                                     <Text>I am a full-stack web developer from Philadelphia, Pennsylvania. </Text>
