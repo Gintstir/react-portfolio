@@ -28,6 +28,7 @@ function PortfolioCard({item}) {
                                 alignSelf="center"                                
                                 src={item.image}
                                 a11ytitle={item.a11ytitle}
+                                pad={{horizontal: "small"}}
                             />
                         </Anchor>    
                     {/* </Box> */}
