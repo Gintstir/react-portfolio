@@ -11,16 +11,16 @@ function Resume() {
     return(
         // <Grommet style={{backgroundImage: `url(${background})`, }}>
         <Grommet full>
-            <Box  fill margin="auto" height="xlarge" width="xlarge">
+            <Box margin="auto">
               
                    <Box margin="auto" align="center"height="large" width="large">
-                    <Anchor margin={{bottom: "30px"}} target="_blank" href="https://drive.google.com/file/d/14on57tyej7CNccacz9QqZZaKn2OpW0Pt/view?usp=sharing">
-                        <Image
+                        <Anchor target="_blank" href="https://drive.google.com/file/d/14on57tyej7CNccacz9QqZZaKn2OpW0Pt/view?usp=sharing">
+                            <Image
                                 src={require("./assets/Gintautas P Stirbys - Google Docs-1.png").default}
-                                fit="cover"
+                                fit="contain"
                                 opacity="strong"                            
                                 a11ytitle="resume"
-                               
+                                margin={{vertical: "small"}}
                                 fill="false"
                             
                             />

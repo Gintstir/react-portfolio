@@ -28,7 +28,7 @@ function Nav() {
                                 <Box justify="end">
                                     <Menu a11yTitle="navigation menu"
                                         dropProps={{ align: {top: "bottom", right: "right"}}}
-                                        icon={<MenuIcon color="black" />}
+                                        icon={<MenuIcon color="white" />}
                                         items={[                                            
                                             {
                                                 label: "About",

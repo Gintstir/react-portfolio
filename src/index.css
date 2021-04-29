@@ -1,11 +1,14 @@
-body {
+body,
+html {
+  /* height: 100%;
+  width: 100%; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: "../src/assets/images/forestbackdrop.jpg";
+  
 }
 
 code {
@@ -16,9 +19,16 @@ code {
 
 #root {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   min-height: 100vh;
-  background-image: url("./assets//images/forestbackdrop.jpg")
+  background-image: url("./assets//images/forestbackdrop.jpg");
+  /* height: 100%;
+  width: 100%;   */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
 .navlinks {

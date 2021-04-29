@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { validateEmail } from "../../utils/helpers";
 
-import background from '../../assets/images/forestbackdrop.jpg'
+// import background from '../../assets/images/forestbackdrop.jpg'
 
 import {
   Box,
@@ -16,7 +16,7 @@ import {
   TextInput,
 } from "grommet";
 
-import { grommet } from "grommet/themes";
+// import { grommet } from "grommet/themes";
 
 const defaultValue = {
   name: "",

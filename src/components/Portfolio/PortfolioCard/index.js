@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Card, Button, CardBody, CardFooter, Collapsible, Heading, Grommet, Image, Anchor, Paragraph} from 'grommet';
+import {Text, Box, Card, Button, CardBody, CardFooter, Collapsible, Heading, Grommet, Image, Anchor, Paragraph} from 'grommet';
 import {FormDown, FormUp, Github, Globe} from "grommet-icons";
 
 
@@ -21,7 +21,7 @@ function PortfolioCard({item}) {
             <Card background={{color:"light-6", opacity:"strong"}} elevation="large" width="large" key={item.heading}>
                 <CardBody pad={{vertical: "small"}} height="small" >
                     {/* <Box height="small" width="large" alignContent="center"> */}
-                        <Anchor href={item.applink}>
+                        <Anchor href={item.applink} target="_blank">
                             <Image
                                 fit="contain"
                                 fill="false"
@@ -33,28 +33,31 @@ function PortfolioCard({item}) {
                         </Anchor>    
                     {/* </Box> */}
                 </CardBody>
-                <Box pad={{horizontal: "medium"}} responsive={true}>
+                <Box pad={{horizontal: "medium"}}  >
                     <Heading alignSelf="center" level="2" margin={{vertical: "medium"}}>
                         {item.heading}
                     </Heading>
-                    <Paragraph  level="3" margin={{top: "none", horizontal: "auto"}}>
-                        {item.tech}
-                    </Paragraph>
+                   
                 </Box>
                 <CardFooter>
                     <Box direction="row" alignContents="center" gap="small">
                         <Button
                             icon={<Github color="black" />}
                             href={item.gitlink}
+                            target="_blank"
                         />
                         <Button
                             icon={<Globe color="black" />}
                             href={item.applink}
+                            target="_blank"
                         />
                     </Box>
                     <ExpandButton onClick={() => setOpen(!open)} />
                 </CardFooter>
                 <Collapsible open={open}>
+                    <Paragraph textAlign="center" fill="false" level="3" margin="medium" pad={{horizontal:"small"}}>
+                        <Text weight="bold">{item.tech}</Text>
+                    </Paragraph>
                     <Paragraph margin="medium" color="black">
                         {item.summary}
                     </Paragraph>
