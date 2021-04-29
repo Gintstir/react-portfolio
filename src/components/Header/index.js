@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
-import {Grommet, Header, Box, Avatar, ResponsiveContext, Menu, grommet, Text} from 'grommet';
+import {Grommet, Header, Box, Avatar, ResponsiveContext, Menu, grommet} from 'grommet';
 import {Menu as MenuIcon } from 'grommet-icons';
 import {deepMerge} from 'grommet/utils';
 

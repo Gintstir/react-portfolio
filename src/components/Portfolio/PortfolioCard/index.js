@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Card, Button, CardBody, CardFooter, Collapsible, Heading, Grommet, Image, Paragraph} from 'grommet';
+import {Box, Card, Button, CardBody, CardFooter, Collapsible, Heading, Grommet, Image, Anchor, Paragraph} from 'grommet';
 import {FormDown, FormUp, Github, Globe} from "grommet-icons";
 
 
@@ -20,21 +20,23 @@ function PortfolioCard({item}) {
         <Grommet>
             <Card background={{color:"light-6", opacity:"strong"}} elevation="large" width="large" key={item.heading}>
                 <CardBody pad={{vertical: "small"}} height="small" >
-                    <Box height="small" width="large" alignContent="center">
-                    <Image
-                        fit="contain"
-                        alignSelf="center"
-                        
-                        src={item.image}
-                        a11ytitle={item.a11ytitle}
-                        />
-                    </Box>
+                    {/* <Box height="small" width="large" alignContent="center"> */}
+                        <Anchor href={item.applink}>
+                            <Image
+                                fit="contain"
+                                fill="false"
+                                alignSelf="center"                                
+                                src={item.image}
+                                a11ytitle={item.a11ytitle}
+                            />
+                        </Anchor>    
+                    {/* </Box> */}
                 </CardBody>
                 <Box pad={{horizontal: "medium"}} responsive={true}>
-                    <Heading alignSelf="center" level="3" margin={{vertical: "medium"}}>
+                    <Heading alignSelf="center" level="2" margin={{vertical: "medium"}}>
                         {item.heading}
                     </Heading>
-                    <Paragraph margin={{top: "none", horizontal: "auto"}}>
+                    <Paragraph  level="3" margin={{top: "none", horizontal: "auto"}}>
                         {item.tech}
                     </Paragraph>
                 </Box>
