@@ -27,6 +27,29 @@ const defaultValue = {
 
 function ContactForm() {
   const [value, setValue] = useState(defaultValue);
+
+  const [status, setStatus] = useState("Submit");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const {name, email, message} = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
   return (
     <Grommet full  >
       <Box fill align="center" justify="center">
@@ -39,14 +62,15 @@ function ContactForm() {
               setValue(nextValue);
             }}
             onReset={() => setValue(defaultValue)}
-            onSubmit={(event) =>
-              console.log("Submit", event.value, event.touched)
-            }
+            // onSubmit={(event) =>
+            //   console.log("Submit", event.value, event.touched)
+            // }
+            onSubmit={handleSubmit}
           >
-            <FormField label="Name" name="name" required>
+            <FormField htmlFor="name" label="Name" name="name" required>
               <TextInput name="name" />
             </FormField>
-            <FormField label="Email" name="email" required>
+            <FormField htmlFor="email" label="Email" name="email" required>
               <MaskedInput
                 name="email"
                 mask={[
@@ -57,32 +81,14 @@ function ContactForm() {
                   { regexp: /^[\w]+$/, placeholder: "com" },
                 ]}
               />
-            </FormField>
-
-            {/* <FormField label="Favorite color?" name="color" background={{color:"white"}}>
-              <Select
-                background="white"
-                name="color"
-                options={[
-                  "red",
-                  "orange",
-                  "brown",
-                  "yellow",
-                  "cyan",
-                  "taupe",
-                  "green",
-                  "indigo",
-                  "violet",
-                ]}
-              />
-            </FormField> */}
-            <FormField label="Message" name="message">
+            </FormField>            
+            <FormField htmlFor="message" label="Message" name="message">
               <TextArea name="message" />
             </FormField>
 
             <Box direction="row" justify="between" margin={{ top: "medium" }}>
               <Button type="reset" label="Clear" color="neutral-3"/>
-              <Button type="submit" label="Send" primary color="neutral-3"/>
+              <Button type="submit"  label={status} primary color="neutral-3"></Button>
             </Box>
           </Form>
         </Box>
