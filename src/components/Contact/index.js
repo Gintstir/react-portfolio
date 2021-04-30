@@ -20,8 +20,7 @@ import {
 
 const defaultValue = {
   name: "",
-  email: "",  
-  color: "brown",
+  email: "",    
   message: "",
   
 };

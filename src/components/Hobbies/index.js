@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grommet, Box, Paragraph} from "grommet"
-import background from '../../assets/images/forestbackdrop.jpg'
+//import background from '../../assets/images/forestbackdrop.jpg'
 
 
 function Hobbies() {
