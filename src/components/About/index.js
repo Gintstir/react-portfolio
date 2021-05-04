@@ -9,10 +9,10 @@ function About () {
 
     return (
         <Grommet full  background={{opacity: "strong"}} >
-            <Box pad="medium" >
+            <Box fill pad="medium" >
                 <Grid responsive columns={{count:"fit", size:'small'}} >
                     
-                    <Box margin={{top:"70px"}} justify="center"pad="medium"  gap="medium" wrap responsive direction="row-responsive" >
+                    <Box margin={{top:"100px"}} justify="center"pad="medium"  gap="medium" wrap responsive direction="row-responsive" >
                         <Card alignSelf="center" background={{color: "white", opacity:"strong"}} margin={{bottom:"40px"}} justify="center" height="medium" width="medium"round="small">
                             <CardHeader height="xxsmall" justify="center">
                                 <Text size="xlarge"> This is me:</Text>
