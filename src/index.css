@@ -44,3 +44,12 @@ a {
 a:hover {
   font-weight: bolder;
 }
+
+.contactLink {
+  text-decoration: none !important;
+}
+
+.contactLink:hover {  
+  font-weight: bolder;
+}
+
