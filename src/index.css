@@ -50,6 +50,20 @@ a:hover {
 }
 
 .contactLink:hover {  
-  font-weight: bolder;
+  font-weight: bolder !important;
 }
 
+
+.contactLink:focus {
+  
+  box-shadow: none !important;
+  
+}
+
+.portLink:focus {
+  box-shadow: none !important;
+}
+
+.resumeLink:focus {
+  box-shadow: none !important;
+}

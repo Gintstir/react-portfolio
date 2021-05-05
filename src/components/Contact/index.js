@@ -61,7 +61,7 @@ function ContactForm() {
               <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generator.png').default} /></Box>
             </Box>
             <Box  round="small" margin="medium" width="small" height="small" align="center" justify="center" background={{color: "light-3", opacity:"strong"}} >
-              <Anchor className="contactLink" color="neutral-3" margin={{bottom: '20px'}} icon={<Instagram/>} label="Instagram" href="https://www.instagram.com/gintstir/" taregt="_blank" />
+              <Anchor className="contactLink" color="neutral-3" margin={{bottom: '20px'}} icon={<Instagram/>} label="Instagram" href="https://www.instagram.com/gintstir/" target="_blank" />
               <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generatorInsta.png').default} /></Box>
             </Box>
           

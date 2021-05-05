@@ -21,8 +21,9 @@ function PortfolioCard({item}) {
             <Card background={{color:"light-6", opacity:"strong"}} elevation="large" width="large" key={item.heading}>
                 <CardBody pad={{vertical: "small"}} height="small" >
                     {/* <Box height="small" width="large" alignContent="center"> */}
-                        <Anchor href={item.applink} target="_blank">
+                        <Anchor className="portCards" href={item.applink} target="_blank">
                             <Image
+
                                 fit="contain"
                                 fill="false"
                                 alignSelf="center"                                
@@ -42,11 +43,13 @@ function PortfolioCard({item}) {
                 <CardFooter>
                     <Box direction="row" alignContents="center" gap="small">
                         <Button
+                            className="portLink"
                             icon={<Github color="black" />}
                             href={item.gitlink}
                             target="_blank"
                         />
                         <Button
+                            className="portLink"
                             icon={<Globe color="black" />}
                             href={item.applink}
                             target="_blank"
