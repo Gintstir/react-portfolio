@@ -50,24 +50,6 @@ function ContactForm() {
     <Grommet  full  >
       <Box fill overflow="auto" pad="small" justify="center" align="center" gap="small" direction="row" responsive wrap>
         
-<<<<<<< HEAD
-            <Box  round="small" margin="medium" width="small" height="small" align="center" justify="center" background={{color: "light-3", opacity:"strong"}} >
-              <Anchor textDecoration="none" className="contactLink" color="neutral-3"margin={{bottom: '20px'}} icon={<Linkedin/>} label="Linkedin" href="https://www.linkedin.com/in/gintautas-stirbys/" target="_blank" />
-              <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generatorLinkedin.png').default} /></Box>
-            </Box>
-            <Box  round="small" margin="medium" width="small" height="small" align="center" justify="center" background={{color: "light-3", opacity:"strong"}}>
-              <Anchor className="contactLink" color="neutral-3" margin={{bottom: '20px'}} icon={<Github/>} label="Github" href="https://github.com/Gintstir" target="_blank" />
-              <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generatorGithub.png').default} /></Box>
-            </Box>
-            <Box  round="small" margin="medium" width="small" height="small" align="center" justify="center" background={{color: "light-3", opacity:"strong"}} >
-              <Anchor className="contactLink" color="neutral-3" margin={{bottom: '20px'}} icon={<Send />} label="Email" href="mailto:gint.stirbys@gmail.com?subject=Hi Gint, just saw your portfolio!" target="_blank" />
-              <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generator.png').default} /></Box>
-            </Box>
-            <Box  round="small" margin="medium" width="small" height="small" align="center" justify="center" background={{color: "light-3", opacity:"strong"}} >
-              <Anchor className="contactLink" color="neutral-3" margin={{bottom: '20px'}} icon={<Instagram/>} label="Instagram" href="https://www.instagram.com/gintstir/" target="_blank" />
-              <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generatorInsta.png').default} /></Box>
-            </Box>
-=======
             <Tip plain content={
               <Box  margin="small" round="small" background={{color:"light-3", opacity: "strong"}} align="center">
                 <Text margin="small">https://www.linkedin.com/in/gintautas-stirbys/</Text>
@@ -111,7 +93,6 @@ function ContactForm() {
                 <Box height="xsmall" width="xsmall"><Image  fit="contain" src={require('./generatorInsta.png').default} /></Box>
               </Box>
             </Tip>
->>>>>>> develop
           
       </Box>
     </Grommet>
