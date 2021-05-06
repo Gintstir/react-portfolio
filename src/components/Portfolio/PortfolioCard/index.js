@@ -58,7 +58,7 @@ function PortfolioCard({item}) {
                     <Paragraph textAlign="center" fill="false" level="3" margin="medium" pad={{horizontal:"small"}}>
                         <Text weight="bold">{item.tech}</Text>
                     </Paragraph>
-                    <Paragraph margin="medium" color="black">
+                    <Paragraph margin="medium" color="black" alignSelf="center">
                         {item.summary}
                     </Paragraph>
                 </Collapsible>

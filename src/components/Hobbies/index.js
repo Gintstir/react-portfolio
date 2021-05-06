@@ -5,22 +5,22 @@ import {Grommet, Box, Grid, Paragraph} from "grommet"
 
 function Hobbies() {
     return (
-        <Grommet  full>
-            <Box  fill gap="small" pad="medium" justify="center" wrap responsive>
-                <Grid  justify="center" gap="small" columns={{count:"fit", size: "small"}} alignContent="center" responsive={true}>
-                    <Box alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
+        <Grommet full>
+            <Box  fill  justify="center" align="center" margin="smal"  direction="row" responsive wrap>
+                {/* <Grid  gap="medium" columns={{count: "fit", size: "medium"}}  justifyContent="center" alignContent="center" responsive> */}
+                    <Box margin="small" alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
                     
                     </Box>
-                    <Box alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
+                    <Box margin="small" alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
                         
                     </Box>
-                    <Box alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
+                    <Box margin="small" alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
                         
                     </Box>
-                    <Box alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
-                        
+                    <Box margin="small" alignSelf="center" round="small" width="medium" height="small" background={{color:"white", opacity:"strong"}} >
+                       
                     </Box>
-                </Grid>
+                {/* </Grid> */}
             </Box>
         </Grommet>
     )
