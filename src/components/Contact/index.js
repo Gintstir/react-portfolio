@@ -47,8 +47,8 @@ import {Github, Linkedin, Send, Instagram} from 'grommet-icons'
 function ContactForm() {
   
   return (
-    <Grommet  full  >
-      <Box fill overflow="auto" pad="small" justify="center" align="center" gap="small" direction="row" responsive wrap>
+    <Grommet  >
+      <Box overflow="auto" pad="small" justifyContent="center" justify="center" align="center" gap="small" direction="row" responsive wrap>
         
             <Tip plain content={
               <Box  margin="small" round="small" background={{color:"light-3", opacity: "strong"}} align="center">

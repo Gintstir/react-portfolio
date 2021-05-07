@@ -83,7 +83,7 @@ const data = [
 
 function Portfolio ()  {
     return(
-        <Grommet full>
+        <Grommet>
             <Box pad="large" >
                 <Grid gap="medium"  pad={{vertical: "large"}} responsive={true} columns={{count: 'fit', size: "medium"}}>
                     {data.map((item) => 

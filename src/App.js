@@ -18,6 +18,7 @@ function App() {
     <>
       
         <Router basename="/">
+         
           <Navbar />
             <Switch>
               <Route exact path="/about">

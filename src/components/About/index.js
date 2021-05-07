@@ -8,8 +8,8 @@ function About () {
     
 
     return (
-        <Grommet full  background={{opacity: "strong"}} >
-            <Box fill pad="medium" >
+        <Grommet >
+            <Box pad="medium" >
                 <Grid responsive columns={{count:"fit", size:'small'}} >
                     
                     <Box margin={{top:"100px"}} justify="center"pad="medium"  gap="medium" wrap responsive direction="row-responsive" >
