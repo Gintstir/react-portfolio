@@ -24,7 +24,7 @@ function PortfolioCard({item}) {
                         <Anchor href={item.applink} target="_blank">
                             <Image
                                 fit="contain"
-                                fill="false"
+                                fill
                                 alignSelf="center"                                
                                 src={item.image}
                                 a11ytitle={item.a11ytitle}
@@ -55,7 +55,7 @@ function PortfolioCard({item}) {
                     <ExpandButton onClick={() => setOpen(!open)} />
                 </CardFooter>
                 <Collapsible open={open}>
-                    <Paragraph textAlign="center" fill="false" level="3" margin="medium" pad={{horizontal:"small"}}>
+                    <Paragraph textAlign="center" fill level="3" margin="medium" pad={{horizontal:"small"}}>
                         <Text weight="bold">{item.tech}</Text>
                     </Paragraph>
                     <Paragraph margin="medium" color="black" alignSelf="center">

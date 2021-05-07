@@ -5,7 +5,7 @@ import {Grommet, Box, Carousel, Image, Text, } from "grommet"
 
 function Hobbies() {
     return (
-        <Grommet full>
+        <Grommet >
             <Box  fill  justify="center" align="center" margin="smal"  direction="row" responsive wrap>
                 {/* <Grid  gap="medium" columns={{count: "fit", size: "medium"}}  justifyContent="center" alignContent="center" responsive> */}
                     <Box>

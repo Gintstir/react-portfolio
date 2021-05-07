@@ -18,7 +18,7 @@ function Nav() {
         <Grommet theme={customTheme}>
             <Header pad="small" background={{color: "dark-1"}}>
                     <Box direction="row">
-                        <Link to="/">
+                        <Link to="/about">
                         <Avatar background="accent-2" src={require("../../assets/images/Gint.JPG").default} />
                         </Link>                    
                     </Box>

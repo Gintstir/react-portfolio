@@ -10,18 +10,16 @@ import {Grommet, Box, Image, Anchor} from 'grommet';
 function Resume() {
     return(
         // <Grommet style={{backgroundImage: `url(${background})`, }}>
-        <Grommet full>
-            <Box margin="auto">
-              
-                   <Box margin="auto" align="center"height="large" width="large">
+        <Grommet >
+            <Box pad="large" align="center" justifyContent="center" >              
+                   <Box margin="medium"justify="center" height="xlarge" width="large">
                         <Anchor target="_blank" href="https://drive.google.com/file/d/14on57tyej7CNccacz9QqZZaKn2OpW0Pt/view?usp=sharing">
                             <Image
                                 src={require("./assets/Gintautas P Stirbys - Google Docs-1.png").default}
                                 fit="contain"
                                 opacity="strong"                            
-                                a11ytitle="resume"
-                                margin={{vertical: "small"}}
-                                fill="false"
+                                a11ytitle="resume"                                
+                                fill
                             
                             />
                         </Anchor>
@@ -31,7 +29,7 @@ function Resume() {
                 {/* <Document file={{resume}} /> */}
             </Box>
             
-        </Grommet>
+        </Grommet> 
     )
 }
 
