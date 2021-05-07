@@ -20,7 +20,7 @@ function App() {
         <Router basename="/">
           <Navbar />
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/about">
                 <About />
               </Route>
               <Route exact path="/portfolio">
