@@ -45,6 +45,10 @@ a:hover {
   font-weight: bolder;
 }
 
+/* a:active {
+  background-color: blueviolet !important;
+} */
+
 .contactLink {
   text-decoration: none !important;
 }

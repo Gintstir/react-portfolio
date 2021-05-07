@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 import {Grommet, Header, Box, Avatar, ResponsiveContext, Menu, grommet} from 'grommet';
 import {Menu as MenuIcon } from 'grommet-icons';
@@ -28,26 +28,27 @@ function Nav() {
                                 <Box justify="end">
                                     <Menu a11yTitle="navigation menu"
                                         dropProps={{ align: {top: "bottom", right: "right"}}}
+                                        dropBackground="dark-3"
                                         icon={<MenuIcon color="white" />}
                                         items={[                                            
                                             {
-                                                label: "About",
-                                                href: "#"
+                                                label: <Box pad="small">About</Box>,
+                                                href: "#about"
                                             },
                                             {
-                                                label: "Portfolio",
+                                                label: <Box pad="small">Portfolio</Box>,
                                                 href: "#portfolio"
                                             },
                                             {
-                                                label: "Resume",
+                                                label: <Box pad="small">Resume</Box>,
                                                 href: "#resume"
                                             },
                                             {
-                                                label: "Contact",
+                                                label: <Box pad="small">Contact</Box>,
                                                 href: "#contact"
                                             },
                                             {
-                                                label: "Hobbies",
+                                                label: <Box pad="small">Hobbies</Box>,
                                                 href: "#hobbies"
                                             }
                                         ]}
@@ -56,11 +57,11 @@ function Nav() {
                             ) : (
                                 <Box direction="row" gap="medium" margin={{right: "medium"}}>
                                    
-                                    <Link to="/">About</Link>
-                                    <Link to="/portfolio">Portfolio</Link>
-                                    <Link to="/resume">Resume</Link>
-                                    <Link to="/contact">Contact</Link>
-                                    <Link to="/hobbies">Hobbies</Link>
+                                    <NavLink activeStyle={{color: "red"}} to="/about" >About</NavLink>
+                                    <NavLink activeStyle={{color: "red"}} to="/portfolio">Portfolio</NavLink>
+                                    <NavLink activeStyle={{color: "red"}} to="/resume">Resume</NavLink>
+                                    <NavLink activeStyle={{color: "red"}} to="/contact">Contact</NavLink>
+                                    <NavLink activeStyle={{color: "red"}} to="/hobbies">Hobbies</NavLink>
                                 </Box>
                             )
                         }
