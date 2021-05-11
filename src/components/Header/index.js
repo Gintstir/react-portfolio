@@ -57,11 +57,11 @@ function Nav() {
                             ) : (
                                 <Box direction="row" gap="medium" margin={{right: "medium"}}>
                                    
-                                    <NavLink activeStyle={{color: "red"}} to="/about" >About</NavLink>
-                                    <NavLink activeStyle={{color: "red"}} to="/portfolio">Portfolio</NavLink>
-                                    <NavLink activeStyle={{color: "red"}} to="/resume">Resume</NavLink>
-                                    <NavLink activeStyle={{color: "red"}} to="/contact">Contact</NavLink>
-                                    <NavLink activeStyle={{color: "red"}} to="/hobbies">Hobbies</NavLink>
+                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/about" >About</NavLink>
+                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/portfolio">Portfolio</NavLink>
+                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/resume">Resume</NavLink>
+                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/contact">Contact</NavLink>
+                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/hobbies">Hobbies</NavLink>
                                 </Box>
                             )
                         }
