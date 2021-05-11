@@ -48,7 +48,7 @@ function ContactForm() {
   
   return (
     <Grommet  >
-      <Box overflow="auto" pad="small" justifyContent="center" justify="center" align="center" gap="small" direction="row" responsive wrap>
+      <Box overflow="auto" margin={{vertical: "large"}} pad="small" justifyContent="center" justify="center" align="center" gap="small" direction="row" responsive wrap>
         
             <Tip plain content={
               <Box  margin="small" round="small" background={{color:"light-3", opacity: "strong"}} align="center">
