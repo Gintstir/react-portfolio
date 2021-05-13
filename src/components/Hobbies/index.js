@@ -6,13 +6,13 @@ import {Grommet, Box, Carousel, Image, Text, } from "grommet"
 function Hobbies() {
     return (
         <Grommet >
-            <Box  fill  justify="center" align="center" margin={{vertical: "large"}}  direction="row" responsive wrap>
+            <Box fill  justify="center" align="center" margin={{vertical: "large"}}  direction="row" responsive wrap>
                 {/* <Grid  gap="medium" columns={{count: "fit", size: "medium"}}  justifyContent="center" alignContent="center" responsive> */}
                     <Box responsive={true}>
                         <Text size="xlarge" color="light-3" weight="bold"alignSelf="center">Adventuring</Text>
                         <Box margin="small" alignSelf="center" round="small" width="medium" height="medium" background={{color:"white", opacity:"strong"}} >
                             
-                            <Carousel fill controls="arrows">
+                            <Carousel  className="hobbyCarousels" fill controls="arrows">
                                 <Image margin="medium" fit="contain" src={require('./assets/hiking1.jpg').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/hiking2.JPG').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/hiking3.JPG').default}/>
@@ -27,7 +27,7 @@ function Hobbies() {
                     <Box responsive={true}>
                         <Text color="black" weight="bold" size="xlarge" alignSelf="center">Cooking / Baking</Text>
                         <Box margin="small" alignSelf="center" round="small" width="medium" height="medium" background={{color:"white", opacity:"strong"}} >
-                            <Carousel fill controls="arrows">
+                            <Carousel   className="hobbyCarousels" fill controls="arrows">
                                 <Image margin="medium" fit="contain" src={require('./assets/cooking1.JPG').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/cooking2.JPG').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/cooking3.JPG').default}/>
@@ -44,7 +44,7 @@ function Hobbies() {
                     <Box responsive={true}>
                         <Text color="light-3" weight="bold" size="xlarge" alignSelf="center">Crafting</Text>
                         <Box margin="small" alignSelf="center" round="small" width="medium" height="medium" background={{color:"white", opacity:"strong"}} >
-                            <Carousel fill controls="arrows">
+                            <Carousel  className="hobbyCarousels" fill controls="arrows">
                                 <Image margin="medium" fit="contain" src={require('./assets/crafting1.jpg').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/crafting2.jpg').default}/>
                                 <Image margin="medium" fit="contain" src={require('./assets/crafting3.jpg').default}/>

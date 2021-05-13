@@ -7,7 +7,8 @@ import Navbar from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import Hobbies from './components/Hobbies'
+import Hobbies from './components/Hobbies';
+
 
 
 
@@ -17,11 +18,10 @@ function App() {
   return (
     <>
       
-        <Router basename="/">
-         
-          <Navbar />
+        <Router basename="/">         
+          <Navbar />          
             <Switch>
-              <Route exact path="/about">
+              <Route exact path="/">
                 <About />
               </Route>
               <Route exact path="/portfolio">

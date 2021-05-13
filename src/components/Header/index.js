@@ -18,7 +18,7 @@ function Nav() {
         <Grommet theme={customTheme}>
             <Header pad="small" background={{color: "dark-1"}}>
                     <Box direction="row">
-                        <Link to="/about">
+                        <Link to="/">
                         <Avatar background="accent-2" src={require("../../assets/images/Gint.JPG").default} />
                         </Link>                    
                     </Box>
@@ -32,7 +32,7 @@ function Nav() {
                                         icon={<MenuIcon color="white" />}
                                         items={[                                            
                                             {
-                                                label: <Box pad="small">About</Box>,
+                                                label: <Box pad="small">Home</Box>,
                                                 href: "#about"
                                             },
                                             {
@@ -57,7 +57,7 @@ function Nav() {
                             ) : (
                                 <Box direction="row" gap="medium" margin={{right: "medium"}}>
                                    
-                                    <NavLink activeStyle={{color: "#FFAA15"}} to="/about" >About</NavLink>
+                                    <NavLink activeStyle={{color: "#00739D"}} to="/" >Home</NavLink>
                                     <NavLink activeStyle={{color: "#FFAA15"}} to="/portfolio">Portfolio</NavLink>
                                     <NavLink activeStyle={{color: "#FFAA15"}} to="/resume">Resume</NavLink>
                                     <NavLink activeStyle={{color: "#FFAA15"}} to="/contact">Contact</NavLink>
