@@ -15,7 +15,7 @@ function Resume() {
                    <Box margin="medium"justify="center" height="xlarge" width="large">
                         <Anchor target="_blank" href="https://drive.google.com/file/d/14on57tyej7CNccacz9QqZZaKn2OpW0Pt/view?usp=sharing">
                             <Image
-                                src={require("./assets/Gintautas P Stirbys - Google Docs-1.png").default}
+                                src={require("./assets/resumePhoto.png").default}
                                 fit="contain"
                                 opacity="strong"                            
                                 a11ytitle="resume"                                
