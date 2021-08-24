@@ -13,9 +13,9 @@ function Resume() {
         <Grommet >
             <Box pad="large" align="center" justifyContent="center" >              
                    <Box margin="medium"justify="center" height="xlarge" width="large">
-                        <Anchor target="_blank" href="https://drive.google.com/file/d/14on57tyej7CNccacz9QqZZaKn2OpW0Pt/view?usp=sharing">
+                        <Anchor target="_blank" href="https://drive.google.com/file/d/1LJwNzLjaU0cdMSrF0YF0pTdWaq_qIknE/view?usp=sharing">
                             <Image
-                                src={require("./assets/resumePhoto.png").default}
+                                src={require("assets/resumeScreenshot.jpg").default}
                                 fit="contain"
                                 opacity="strong"                            
                                 a11ytitle="resume"                                
